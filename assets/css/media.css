@@ -1,0 +1,90 @@
+/* mobile version */
+@media (max-width : 768px) {
+    /* header part*/
+    header>nav>ul{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header>nav{
+       padding: 0%;
+    }
+
+    header>nav>ul>li{
+        margin: 10px 0px;
+    }
+
+    header>nav>ul>li>a{
+        margin: 25px 0px;
+        font-size: 20px;
+    }
+
+    [class*="fa-"]{
+        margin: 0%;
+    }
+
+    .imgHolder{
+        min-height: 20vh;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    .textHolder{
+       max-width:85% ;
+       height: auto;
+       padding: 20px;
+       margin: 20px;
+       min-height: 120px;
+    }
+    .textHolder > h1 {
+        font-size: 30px; 
+        padding: 5px;
+    }
+
+    .textHolder > p {
+        font-size: 14px; 
+        line-height: 1.1;
+    }
+
+    .cardHolder{
+        flex-flow: column;
+    }
+    .card{
+        margin: 20px 0px;
+        padding: 20px 25px;
+        width: 90%;
+    }
+}
+
+    /* tablet version */
+@media(min-width:769px) and (max-width:1200px){
+  
+
+    header>nav{
+        padding: 0%;
+        align-items: flex-start;
+    }
+
+    header>nav>.icon{
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .fa-phone{
+     margin-left: 0px;
+    }
+
+    .imgHolder{
+        justify-content: center;
+    }
+    
+    .cardHolder{
+      flex-wrap: wrap;
+    }
+
+    .textHolder{
+        margin: 0px;
+    }
+}
